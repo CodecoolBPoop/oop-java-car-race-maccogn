@@ -6,8 +6,13 @@ public class Truck extends Vehicles {
     private boolean breakDown = false;
 
 
-    public void setSpeed(){
-        this.speed = 100/3;
+    public void setSpeed(boolean breakDown){
+        if(breakDown){ this.speed = 75;}
+
+    }
+
+    public void setSpeed(int plusHour){
+            this.speed = speed/(1+plusHour);
     }
 
     public int getSpeed(){

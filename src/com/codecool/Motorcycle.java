@@ -3,8 +3,7 @@ package com.codecool;
 public class Motorcycle extends Vehicles {
     private int speed = 100;
     private String name;
-    private int distanceTraveled;
-    private double moveForAnHour;
+
 
     public void setSpeed(boolean isRaining, boolean breakdown) {
         if(breakdown){ this.speed = 75; }
@@ -21,7 +20,7 @@ public class Motorcycle extends Vehicles {
 
 
     public String getName(){
-        System.out.println("Motor name: " + this.name + " Speed: " + this.speed + "km/h" + " Distance Traveled: " + distanceTraveled);
+        System.out.println("Motor name: " + this.name + " Speed: " + this.speed + "km/h");
         return this.name;
     }
 }
