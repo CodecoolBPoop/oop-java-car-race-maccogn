@@ -12,7 +12,7 @@ public class Truck extends Vehicles {
     }
 
     public void setSpeed(int plusHour){
-            this.speed = speed/(1+plusHour);
+            this.speed = 0;
     }
 
     public int getSpeed(){

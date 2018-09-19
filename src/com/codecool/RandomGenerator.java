@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class RandomGenerator {
     static Random rand = new Random();
-    static String[] firstName= {"Vortex","Fang","Hero", "Majesty", "Guerilla", "Presence", "Sprite", "Olympian","Eminance","Dawn"};
-    static String[] secondName = {"Whirlpool","Basilisk", "Olympian", "Prime", "Blaze", "Aeon", "Prodigy", "Conqueror", "Liberty", "Reach"};
+    private static String[] firstName= {"Vortex","Fang","Hero", "Majesty", "Guerilla", "Presence", "Sprite", "Olympian","Eminance","Dawn"};
+    private static String[] secondName = {"Whirlpool","Basilisk", "Olympian", "Prime", "Blaze", "Aeon", "Prodigy", "Conqueror", "Liberty", "Reach"};
 
     public static int randomNum(int max, int min){
         return rand.nextInt((max - min) + 1) + min;

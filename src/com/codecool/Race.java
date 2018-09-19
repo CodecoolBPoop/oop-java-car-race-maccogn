@@ -20,6 +20,8 @@ public class Race {
 
         for(int round = 0 ; round< 51; round++){
             System.out.println("Round: "+round);
+            System.out.println("Weather: " );
+            System.out.print(Raining ? "Its raining \n" : "It s sunny day \n");
             Cars.clear();
             Motors.clear();
             Trucks.clear();
