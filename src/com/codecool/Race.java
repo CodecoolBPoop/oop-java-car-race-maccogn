@@ -27,15 +27,19 @@ public class Race {
             Trucks.clear();
             isThereABrokenTruck = false;
             Race.fillVehicles(Raining);
+            System.out.println("_____________________________________");
             for(Car vehicle: Cars){
                 vehicle.getName();
             }
+            System.out.println("_____________________________________");
             for(Motorcycle motor: Motors){
                 motor.getName();
             }
+            System.out.println("_____________________________________");
             for(Truck truck: Trucks){
                 truck.getName();
             }
+            System.out.println("_____________________________________");
         }
 
     }
@@ -57,7 +61,7 @@ public class Race {
 
         }
 
-        for (int i= 0; i< 10; i++){
+        for (int i= 1; i< 11; i++){
             Car car= new Car();
             car.setSpeed(isThereABrokenTruck);
             car.setName();
