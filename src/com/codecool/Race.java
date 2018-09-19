@@ -46,9 +46,10 @@ public class Race {
             truck.setName(String.valueOf(RandomGenerator.randomNum(1000,0)));
             truck.setBreakDown();
             truck.setSpeed(isThereABrokenTruck);
+            if(isThereABrokenTruck) { truck.setSpeed(); }
             if(truck.getBreakDown()) {
                 isThereABrokenTruck = true;
-                truck.setSpeed(2);
+                truck.setBreakDownSpeed();
             }
             Trucks.add(truck);
 

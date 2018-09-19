@@ -11,9 +11,11 @@ public class Truck extends Vehicles {
 
     }
 
-    public void setSpeed(int plusHour){
-            this.speed = 0;
+    public void setSpeed(){
+            this.speed = 75;
     }
+
+    public void setBreakDownSpeed() { this.speed = 0;}
 
     public int getSpeed(){
         return speed;
